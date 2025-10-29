@@ -10,7 +10,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
   color: green;
   font-weight: bold;
   margin: 0 10px;
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 90px;
+  gap: 40px;
 }
 
 .utilityIcons {
@@ -125,3 +125,54 @@ header {
   backdrop-filter: blur(4px);
 }
 /* ===================== PRODUCTS PAGE ===================== */
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.productCard img {
+  width: 100%;
+  height: 250px; /* 👈 Fixed height */
+  object-fit: cover; /* 👈 Crops and scales image to fill */
+  border-radius: 8px;
+}
+
+
+.productName {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.productPrice {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 15px;
+}
+
+.addToCartBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Antonio", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addToCartBtn:hover {
+  background-color: darkgreen;
+}
