@@ -1,0 +1,114 @@
+/* ===================== RECYCLABLE ===================== */
+
+/* Header styling */
+.headButtons {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: green;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+#logoDK img {
+  height: 80px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+/* PRODUCTS button styling */
+.productsButton {
+  text-decoration: none;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+}
+
+/* Text styling */
+.productText {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ===================== HOME PAGE ===================== */
+
+/* Hero section styling */
+.productSection {
+  position: relative;
+  background-image: url('/assets/img/apparel.png'); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay by default */
+.productSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease;
+  z-index: 1;
+}
+
+/* Blur on hover */
+.productSection:hover::before {
+  backdrop-filter: blur(4px);
+}
+
+.aboutUsSection {
+  position: relative;
+  background-image: url('/assets/img/aboutUsPic.png'); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 40px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.aboutUsSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease;
+  z-index: 1;
+}
+
+.aboutUsSection:hover::before {
+  backdrop-filter: blur(4px);
+}
+/* ===================== PRODUCTS PAGE ===================== */
