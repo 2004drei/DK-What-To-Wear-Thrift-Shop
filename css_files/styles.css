@@ -32,14 +32,28 @@
   gap: 15px;
 }
 
+body {
+  padding-top: 120px;
+}
+
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+}
+
+.headerContent {
+  max-width: 1200px; /* 👈 Adjust as needed */
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
-  background-color: white;
-  border-bottom: 1px solid #ccc;
+  padding: 15px 30px;
 }
 
 /* PRODUCTS button styling */
@@ -66,6 +80,61 @@ header {
 
 
 /* ===================== HOME PAGE ===================== */
+
+.welcomeHero {
+  position: relative;
+  background-image: url('/Assets/img/welcomeBanner.jpg'); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.welcomeOverlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.welcomeHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.welcomeText {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.ctaButton {
+  font-family: "Antonio", sans-serif;
+  font-size: 18px;
+  background-color: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: darkgreen;
+}
+
 
 /* Hero section styling */
 .productSection {
