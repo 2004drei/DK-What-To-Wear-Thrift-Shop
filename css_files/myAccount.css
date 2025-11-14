@@ -1,0 +1,56 @@
+.accountLayout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebarNav {
+  width: 250px;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.sidebarNav img {
+  height: 80px;
+}
+
+.verticalNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Antonio", sans-serif;
+  font-size: 25px;
+}
+
+.verticalNav a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+.verticalNav a.active {
+  color: darkgreen;
+  border-left: 4px solid darkgreen;
+  padding-left: 10px;
+}
+
+.sidebarIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.sidebarIcons a {
+  color: green;
+  font-size: 20px;
+}
+
+.accountContent {
+  flex: 1;
+  padding: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+}
